@@ -1,0 +1,6 @@
+C:\c#_step_by_step\edX_programming_with_csharp\mod4\mod4\bin\Debug\mod4.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod4\mod4\bin\Debug\mod4.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod4\mod4\bin\Debug\mod4.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod4\mod4\obj\Debug\mod4.csprojResolveAssemblyReference.cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod4\mod4\obj\Debug\mod4.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod4\mod4\obj\Debug\mod4.pdb
