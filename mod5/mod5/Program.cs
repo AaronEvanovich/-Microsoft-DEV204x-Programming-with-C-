@@ -15,9 +15,9 @@ namespace mod5
             Student s3 = new Student("Ellen", "Tousi", "F");
 
             Course c1 = new Course("Programming with C#", 3);
-            c1._s[0] = s1;
-            c1._s[1] = s2;
-            c1._s[2] = s3;
+            c1.addStudent(s1);
+            c1.addStudent(s2);
+            c1.addStudent(s3);
             Teacher t1 = new Teacher("Walter", "White", "M");
             c1.Staff = t1;
             Degree d1 = new Degree("Bachelor");
@@ -109,7 +109,8 @@ namespace mod5
     {
         private string _name;
         private int _credit;
-        public Student[] _s = new Student[3];
+        private Student[] _s = new Student[3];
+        private int studenNumber = 0;
         private Teacher _t;
         
 
@@ -135,7 +136,19 @@ namespace mod5
         {
             Name = name;
             Credit = credit;
-        }        
+        }
+        public void addStudent(Student s)
+        {
+            if (studenNumber<3)
+            {
+                _s[studenNumber] = s;
+                studenNumber++;
+            }
+            else
+            {
+                Console.WriteLine("Full.");
+            }
+        }
     }
     class Degree
     {
