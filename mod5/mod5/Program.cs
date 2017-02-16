@@ -9,186 +9,187 @@ namespace mod5
     class Program
     {
         static void Main(string[] args)
-        {
-            Student s1 = new Student("John", "Smith", "M");
-            Student s2 = new Student("Tom", "Orr", "M");
-            Student s3 = new Student("Ellen", "Tousi", "F");
+        { //(1)
+            Student Stud001 = new Student();
+            Student Stud002 = new Student();
+            Student Stud003 = new Student();
+            //(2)
+            Course ProgrammingWithCSharp = new Course();
+            ProgrammingWithCSharp.CourseName = "Programming with C#";
+            //(3)
+            ProgrammingWithCSharp.ArrayStudent[0] = Stud001;
+            ProgrammingWithCSharp.ArrayStudent[1] = Stud002;
+            ProgrammingWithCSharp.ArrayStudent[2] = Stud003;
+            //(4)
+            Teacher Teacher001 = new Teacher();
+            //(5)
+            ProgrammingWithCSharp.ArrayTeacher[0] = Teacher001;
+            //(6)
+            Degree Bachelor = new Degree();
+            Bachelor.DegreeName = "Bachelor of Science";
+            //(7)
+            Bachelor.SingleCourse = ProgrammingWithCSharp;
+            //(8)
+            UProgram InformationTechnology = new UProgram();
+            InformationTechnology.Name = "Information Technology";
+            //(9)
+            InformationTechnology.SingleDegree = Bachelor;
+            //(10)
+            Console.WriteLine("The {0} program contains the {1} degree." +
+            "\nThe {1} degree contains the course {2}." +
+            "\nThe {2} course contains {3} student(s)."
+            , InformationTechnology.Name, Bachelor.DegreeName, ProgrammingWithCSharp.CourseName, Stud003.Counter);
+            Console.WriteLine("{0}", ProgrammingWithCSharp.ArrayStudent[0].FirstName);
+            Console.ReadKey();
+        }
+        public class Student
+        { //Private member variables:
+            private string firstName;
+            private string lastName;
+            private int age;
+            //private int StudentCount;
 
-            Course c1 = new Course("Programming with C#", 3);
-            c1.addStudent(s1);
-            c1.addStudent(s2);
-            c1.addStudent(s3);
-            Teacher t1 = new Teacher("Walter", "White", "M");
-            c1.Staff = t1;
-            Degree d1 = new Degree("Bachelor");
-            d1.Cs = c1;
-            UProgram u1 = new UProgram("Information Technology");
-            u1.Dg = d1;
-
-            Console.WriteLine("{0} program contains {1} degree.", u1.Name, u1.Dg.Name);
-            Console.WriteLine("{0} degree contains {1} course.", d1.Name, d1.Cs.Name);
-            Console.WriteLine("{0} course contains {1} students.", c1.Name, Student.StudentCount());
-            Console.ReadLine();
-
-        }
-    }
-    class Student
-    {
-        private static int _studentCount;
-        private string _firstName;
-        private string _lastName;
-        private string _sex;
-        
-        #region Properties
-        public string FirstName
-        {
-            get { return _firstName; }
-            set { _firstName = value; }
-        }
-        public string LastName
-        {
-            get { return _lastName; }
-            set { _lastName = value; }
-        }
-        public string Sex
-        {
-            get { return _sex; }
-            set { _sex = value; }
-        }
-        #endregion
-
-        public Student()
-        {
-            _studentCount++;
-        }
-        public Student(string first, string last, string sex)
-        {
-            FirstName = first;
-            LastName = last;
-            Sex = sex;
-            _studentCount++;
-        }
-
-        public static int StudentCount()
-        {
-            return _studentCount;
-        }
-    }
-    class Teacher
-    {
-        private string _firstName;
-        private string _lastName;
-        private string _sex;
-
-        #region Properties
-        public string FirstName
-        {
-            get { return _firstName; }
-            set { _firstName = value; }
-        }
-        public string LastName
-        {
-            get { return _lastName; }
-            set { _lastName = value; }
-        }
-        public string Sex
-        {
-            get { return _sex; }
-            set { _sex = value; }
-        }
-        #endregion
-
-        public Teacher(string first, string last, string sex)
-        {
-            FirstName = first;
-            LastName = last;
-            Sex = sex;
-        }
-    }
-    class Course
-    {
-        private string _name;
-        private int _credit;
-        private Student[] _s = new Student[3];
-        private int studenNumber = 0;
-        private Teacher _t;
-        
-
-        #region Properties
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-        public int Credit
-        {
-            get { return _credit; }
-            set { _credit = value; }
-        }
-        public Teacher Staff
-        {
-            get { return _t; }
-            set { _t = value; }
-        }
-        #endregion
-
-        public Course(string name, int credit)
-        {
-            Name = name;
-            Credit = credit;
-        }
-        public void addStudent(Student s)
-        {
-            if (studenNumber<3)
+            //public properties
+            public string FirstName
             {
-                _s[studenNumber] = s;
-                studenNumber++;
+                get { return firstName; }
+                set { this.firstName = value; }
             }
-            else
+            public string LastName
             {
-                Console.WriteLine("Full.");
+                get { return lastName; }
+                set { this.lastName = value; }
+            }
+            public int Age
+            {
+                get { return age; }
+                set { this.age = value; }
+            }
+            //Track Number of students enrolled:
+            static private int counter;
+            public int Counter
+            {
+                get { return counter; }
+            }
+            public Student()
+            {
+                firstName = "Tom";
+                counter++;
             }
         }
-    }
-    class Degree
-    {
-        private string _name;
-        private Course _cs;
-
-        public string Name
+        public class Teacher
         {
-            get { return _name; }
-            set { _name = value; }
+            //private members
+            private string firstName;
+            private string lastName;
+            private int yearsOfExp;
+            //public properties
+            public string FirstName
+            {
+                get { return firstName; }
+                set { this.FirstName = value; }
+            }
+            public string LastName
+            {
+                get { return lastName; }
+                set { this.lastName = value; }
+            }
+            public int YearsOfExp
+            {
+                get { return yearsOfExp; }
+                set { this.yearsOfExp = value; }
+            }
         }
-        public Course Cs
+        public class UProgram
         {
-            get { return _cs; }
-            set { _cs = value; }
+            //Private members
+            private string name;
+            private DateTime dateAccredited;
+            private int maxEnrollment;
+            private Degree singleDegree;
+            public string Name
+            {
+                get { return name; }
+                set { this.name = value; }
+            }
+            public DateTime DateAccredited
+            {
+                get { return dateAccredited; }
+                set { this.dateAccredited = value; }
+            }
+            public int MaxEnrollment
+            {
+                get { return maxEnrollment; }
+                set { this.maxEnrollment = value; }
+            }
+            public Degree SingleDegree
+            {
+                get { return singleDegree; }
+                set { this.singleDegree = value; }
+            }
         }
-        public Degree(string name)
+        public class Degree
         {
-            Name = name;
+            //private members
+            private string degreeName;
+            private bool isGraduate;
+            private int duration;
+            private Course singleCourse;
+            //public properties
+            public string DegreeName
+            {
+                get { return degreeName; }
+                set { this.degreeName = value; }
+            }
+            public bool IsGraduate
+            {
+                get { return isGraduate; }
+                set { this.isGraduate = value; }
+            }
+            public int Duration
+            {
+                get { return duration; }
+                set { this.duration = value; }
+            }
+            public Course SingleCourse
+            {
+                get { return singleCourse; }
+                set { this.singleCourse = value; }
+            }
         }
-
-    }
-    class UProgram
-    {
-        private string _name;
-        private Degree _dg;
-
-        public string Name
+        public class Course
         {
-            get { return _name; }
-            set { _name = value; }
-        }
-        public Degree Dg
-        {
-            get { return _dg; }
-            set { _dg = value; }
-        }
-        public UProgram(string name)
-        {
-            Name = name;
+            //Private members
+            private string courseName;
+            private string department;
+            private DateTime startDate;
+            private Student[] arrayStudent = new Student[3];
+            private Teacher[] arrayTeacher = new Teacher[3];
+            public string CourseName
+            {
+                get { return courseName; }
+                set { this.courseName = value; }
+            }
+            public string Department
+            {
+                get { return department; }
+                set { this.department = value; }
+            }
+            public DateTime StartDate
+            {
+                get { return startDate; }
+                set { this.startDate = value; }
+            }
+            public Student[] ArrayStudent
+            {
+                get { return arrayStudent; }
+                set { this.arrayStudent = value; }
+            }
+            public Teacher[] ArrayTeacher
+            {
+                get { return arrayTeacher; }
+                set { this.arrayTeacher = value; }
+            }
         }
     }
 }

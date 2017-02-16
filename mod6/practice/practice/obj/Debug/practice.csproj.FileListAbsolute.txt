@@ -1,0 +1,6 @@
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\practice\practice\bin\Debug\practice.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\practice\practice\bin\Debug\practice.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\practice\practice\bin\Debug\practice.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\practice\practice\obj\Debug\practice.csprojResolveAssemblyReference.cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\practice\practice\obj\Debug\practice.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\practice\practice\obj\Debug\practice.pdb
