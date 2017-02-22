@@ -1,0 +1,12 @@
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\mod6\mod6\bin\Debug\mod6.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\mod6\mod6\bin\Debug\mod6.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\mod6\mod6\bin\Debug\mod6.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\mod6\mod6\obj\Debug\mod6.csprojResolveAssemblyReference.cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\mod6\mod6\obj\Debug\mod6.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod6\mod6\mod6\obj\Debug\mod6.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod7\mod7\mod6\bin\Debug\mod6.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod7\mod7\mod6\obj\Debug\mod6.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod7\mod7\mod6\obj\Debug\mod6.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod7\mod7\mod6\bin\Debug\mod6.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod7\mod7\mod6\bin\Debug\mod6.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod7\mod7\mod6\obj\Debug\mod6.csprojResolveAssemblyReference.cache
