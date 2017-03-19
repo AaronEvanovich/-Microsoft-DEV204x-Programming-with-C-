@@ -1,0 +1,6 @@
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\Mod9Practice\Mod9Practice\bin\Debug\Mod9Practice.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\Mod9Practice\Mod9Practice\obj\Debug\Mod9Practice.csprojResolveAssemblyReference.cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\Mod9Practice\Mod9Practice\bin\Debug\Mod9Practice.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\Mod9Practice\Mod9Practice\bin\Debug\Mod9Practice.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\Mod9Practice\Mod9Practice\obj\Debug\Mod9Practice.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\Mod9Practice\Mod9Practice\obj\Debug\Mod9Practice.pdb

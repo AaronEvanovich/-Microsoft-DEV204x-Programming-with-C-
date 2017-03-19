@@ -1,0 +1,14 @@
+C:\Users\gerryo\Documents\EdX Project\Demo Files\Allfiles\Mod03\Democode\Starter\EventsAndXAML\bin\Debug\EventsAndXAML.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\bin\Debug\EventsAndXAML.exe.config
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\bin\Debug\EventsAndXAML.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\bin\Debug\EventsAndXAML.pdb
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML.csprojResolveAssemblyReference.cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\MainWindow.baml
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\MainWindow.g.cs
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\App.g.cs
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML_MarkupCompile.cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML.g.resources
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML.Properties.Resources.resources
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML.csproj.GenerateResource.Cache
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML.exe
+C:\c#_step_by_step\edX_programming_with_csharp\mod9\EventsAndXAML\EventsAndXAML\obj\Debug\EventsAndXAML.pdb
